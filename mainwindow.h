@@ -16,8 +16,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void addCameraGLWidget(mt4sd::CameraGLViewer *cameraViewer);
+
 private:
     Ui::MainWindow *ui;
-    mt4sd::CameraGLViewer *cameraWidget;
 };
 #endif // MAINWINDOW_H

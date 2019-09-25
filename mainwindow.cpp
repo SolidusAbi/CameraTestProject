@@ -6,8 +6,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->cameraWidget = new mt4sd::CameraGLViewer();
-    ui->verticalLayout->addWidget(this->cameraWidget);
 }
 
 MainWindow::~MainWindow()
@@ -15,3 +13,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::addCameraGLWidget(mt4sd::CameraGLViewer *cameraViewer)
+{
+    ui->verticalLayout->addWidget(cameraViewer);
+}
