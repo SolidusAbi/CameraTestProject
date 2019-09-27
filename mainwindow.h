@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <cameraglviewer.h>
+#include <ThermalCameraLib/CameraGLViewer.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
-include_directories(/home/abian/Workspace/Projects/Cpp/ThermalCameraLib/)
+include_directories(/home/abian/Workspace/Projects/Cpp/ThermalCameraLib/include)
 link_directories(/home/abian/Workspace/Projects/Cpp/Build/ThermalCameraLib/Debug/)
 
 add_executable(CameraTest
