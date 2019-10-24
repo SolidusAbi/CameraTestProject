@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout"/>
+     <widget class="mt4sd::CameraViewer" name="cameraViewer" native="true"/>
     </item>
    </layout>
   </widget>
@@ -43,6 +43,14 @@
    </attribute>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>mt4sd::CameraViewer</class>
+   <extends>QWidget</extends>
+   <header location="global">CameraViewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

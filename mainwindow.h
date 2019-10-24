@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <ThermalCameraLib/CameraGLViewer.h>
+#include <CameraGLViewer.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,8 +15,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-    void addCameraGLWidget(mt4sd::CameraGLViewer *cameraViewer);
 
 private:
     Ui::MainWindow *ui;
